@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>A Pen by  Nick Noble</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="site-header">
+    
+    
+    
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+    </div>
+    
+    
+    <html lang="pt-br">
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>CRUD com Bootstrap 3</title>
+
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+ <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+   <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+     <span class="sr-only">Toggle navigation</span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="index.html">Menu Principal</a>
+   </div>
+   <div id="navbar" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-right">
+     <li><a href="teste.html">Ossos</a></li>
+     <li><a href="#">Op&ccedil;&otilde;es</a></li>
+     <li><a href="#">Perfil</a></li>
+     <li><a href="#">Ajuda</a></li>
+    </ul>
+   </div>
+  </div>
+ </nav>
+
+ <div id="main" class="container-fluid">
+  
+  <html>
+   <head>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
+      <!------ Include the above in your HEAD tag ---------->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <form class="form-horizontal" id="mainForm">
+         <fieldset>
+             <br><br>
+            <div id="Logo">
+               <a href="index.html"><img style="margin-right: 27% ; width: 200px; " src="img/eadLogo.png" /></a>
+                <label for="dados" style="font-size: 40px; margin-right: 15%; color: grey" class="propiedad"> Cadastro do Aluno </label>
+            </div>
+              <br>
+            <label for="nome" style="font-size: 13px; margin-left:90% ; color: darkgray
+                                     " class="propiedad">* Campo Obrigat&oacute;rio</label> 
+           
+              
+                  <label for="dados" style="font-size: 24px; margin-left: 1.5%; color: grey" class="propiedad"></label>
+                  <div class="panel-body">
+                     <!-- Text input-->
+                     <div class="form-group">
+                        <label class="col-md- control-label" for="Nome"></label>  
+                        <div class="col-md-12">
+                           <input id="Nome" name="Nome" autofocus="autofocus" placeholder="* Nome" class="form-control input-md propiedad"  required="required" before type="text" onkeyup="revomeNumeros(this)" class="propriedade">
+                        </div>
+                     </div>
+                     <!-- Select Basic -->
+                     <div class="form-group">
+                        <label class="col-md- control-label" for="Estado Civil"></label>
+                        <div class="col-md-4">
+                           <select  style="color:grey" required="required" id="EstadoCivil" name="EstadoCivil" class="form-control">
+                              <option value="">* Estado Civil</option>
+                              <option value="Solteiro(a)">Solteiro(a)</option>
+                              <option value="Casado(a)">Casado(a)</option>
+                              <option value="Divorciado(a)">Divorciado(a)</option>
+                              <option value="Viuvo(a)">Viuvo(a)</option>
+                           </select>
+                        </div>
+                        <!-- Text input
+                           <!--<div class="form-group">-->
+                        <div class="col-md-4">
+                           <input id="cpf" name="cpf"  placeholder="* CPF" class="form-control input-md" required="required" type="text" maxlength="11" onfocus="removeFormatacao(this)" onkeyup="filtraCampo(this,'[0-9]+')" onblur="validaCPF(this);MascaraCPF(this)" >
+                        </div>
+                   
+                        <div class="col-md-4"> 
+                           <label style="color: grey" class="radio-inline" for="radios-1">* Sexo</label>
+                           <label style="color: grey" required="" class="radio-inline" for="radios-0" >
+                           <input name="feminino1" id="feminino1" value="Feminino" onclick="desabilita('feminino1'); changeRequired('feminino1Tempo', 'Certificado de Reservista',false)" type="radio" required="required">Feminino</label> 
+                           <label style="color: grey" class="radio-inline" for="radios-1">
+                           <input name="feminino1" id="feminino1" value="Masculino" onclick="habilita('feminino1'); changeRequired('feminino1Tempo', 'Certificado de Reservista',true)" type="radio" required="required">Masculino</label>
+                        </div>
+                     </div>
+                     <!-- Prepended text-->
+                     <div class="form-group">
+                        <label class="col-md- control-label" for="UF"></label>
+                        <div class="col-md-2">
+                           <select  style="color: grey" required="required" id="UF" name="UF" class="form-control">
+                              <option value="">* UF</option>
+                              <option value="AC">AC</option>
+                              <option value="AL">AL</option>
+                              <option value="AP">AP</option>
+                              <option value="AM">AM</option>
+                              <option value="BA">BA</option>
+                              <option value="CE">CE</option>
+                              <option value="DF">DF</option>
+                              <option value="ES">ES</option>
+                              <option value="GO">GO</option>
+                              <option value="MA">MA</option>
+                              <option value="MS">MS</option>
+                              <option value="MT">MT</option>
+                              <option value="MG">MG</option>
+                              <option value="PA">PA</option>
+                              <option value="PB">PB</option>
+                              <option value="PR">PR</option>
+                              <option value="PE">PE</option>
+                              <option value="PI">PI</option>
+                              <option value="RJ">RJ</option>
+                              <option value="RN">RN</option>
+                              <option value="RS">RS</option>
+                              <option value="RO">RO</option>
+                              <option value="RR">RR</option>
+                              <option value="SC">SC</option>
+                              <option value="SP">SP</option>
+                              <option value="SE">SE</option>
+                              <option value="TO">TO</option>
+                           </select>
+                        </div>
+                      
+                        <div class="col-md-4">
+                           <input id="endereco" class="form-control input-md" required="required"  name="endereco" placeholder="* Local de Nascimento" />
+                           <label for="endereco" class="propiedad"></label>
+                        </div>
+               
+                        <div class="col-md-3">
+                           <span style="color:grey"></span>
+                           <input id="dtnasc" name="dtnasc"  placeholder="* Data de Nascimento" class="form-control input-md" required="required" type="" maxlength="10" onblur="validaData(this) ; calculaIdade(this)"  OnKeyPress="formatar('##/##/####', this)" >
+                        </div>
+                         <div class="col-md-3">
+                           <input id="idade" name="idade" disabled  placeholder="* Idade" class="form-control input-md" required="required" type="text" maxlength="11" onkeyup="filtraCampo(this,'[0-9]+')" >
+                        </div>
+                     </div>
+                      
+                     <!-- Prepended text-->
+                     <div class="form-group">
+                        <label class="col-md- control-label" for="prependedtext"></label>
+                        <div class="col-md-6">
+                           <div class="input-group">
+                              <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                              <input id="email" name="email" class="form-control" placeholder="* email@email.com" required="required" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+                           </div>
+                        </div>
+                    
+                        <div class="col-md-6"> 
+                           <label style="color: grey" class="radio-inline" for="radios-1">* Primeiro Emprego?</label>
+                           <label style="color: grey" required="" class="radio-inline" for="radios-0" >
+                           <input name="nott" id="not" value="Sim" onclick="changeRequired('pis', 'PIS',false);changeRequired('ultSalario', '&Uacute;ltimo Salario R$',false);changeRequired('ctps', 'Numero da CTPS',false)" type="radio" required="required">Sim</label> 
+                           <label style="color: grey" class="radio-inline" for="radios-1">
+                           <input name="nott" id="not" value="Não" onclick="changeRequired('pis', 'PIS',true);changeRequired('ultSalario', '&Uacute;ltimo Salario R$',true);changeRequired('ctps', 'Numero da CTPS',true)" type="radio" required="required">Não</label>
+                        </div>
+                         
+                         
+                     </div>
+                     <div class="form-group">
+                        <label class="col-md- control-label" for="prependedtext"></label>
+                        <div class="col-md-4">
+                           <div class="input-group">
+                              <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                              <input id="telefone1" name="telefone1" class="form-control" placeholder="* Telefone 1" required="required" type="text" maxlength="13" OnKeyPress="formatar('## #####-####', this)"  onkeyup="filtraCampo(this,'[0-9| |-]+')">
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="input-group">
+                              <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                              <input id="telefone" name="telefone2" class="form-control" placeholder=" Telefone 2" type="text"  maxlength="13"  onkeyup="filtraCampo(this,'[0-9| |-]+')"
+                                 OnKeyPress="formatar('## #####-####', this)">
+                           </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                              <input type="text" id="ctps" class="form-control input-md"  required="required" name="Carteira" placeholder="* Numero da CTPS" />
+                        </div>
+                         
+                     </div>
+                     <div class="form-group">
+                        <label class="col-md- control-label" for="prependedtext"></label>
+                        <div class="col-md-2">
+                           <input id="rg" name="rg" placeholder="* RG" class="form-control input-md" required="required" type="text" maxlength="20">
+                        </div>
+                   
+                        <div class="col-md-2">
+                           <span style="color:grey"></span>
+                           <input id="emissao" name="emissao" placeholder="* Emiss&atilde;o" class="form-control input-md" required="required" type="" maxlength="10"  onblur="validaData(this)" OnKeyPress="formatar('##/##/####', this)">
+                        </div>
+                     
+              
+                        <div class="col-md-4">
+                              <input id="feminino1Tempo" name="feminino1Tempo"  type="text"  class="form-control input-md" required="required" name="Reservista" placeholder="* Certificado de Reservista" />
+                              <label for="Reservista" class="propiedad"></label>
+                        </div>
+                         
+                          <div class="col-md-4">
+                              <input id="orgao" class="form-control input-md"  name="orgao" placeholder=" Org&atilde;o Expedidor RG"/>
+                               <label for="orgao" class="propiedad"></label>
+                        </div>
+                         
+                        
+                         
+                     </div>
+                     <div class="form-group">
+                        <label class="col-md- control-label" for="Titulo"></label>
+                        <div class="col-md-3">
+                              <input id="Titulo" type="text"  class="form-control input-md" required="required" name="Titulo" placeholder="* Titulo de Eleitor" />
+                           </div>
+                      
+                      
+                        <div class="col-md-3">
+                              <input id="pis" type="text"  class="form-control input-md" required="required" name="pis" placeholder="* PIS" />
+                              <label for="pis" class="propiedad"></label>
+                        </div>
+                    
+                        <div class="col-md-3">
+                           <input id="cep" name="cep" onkeyup="filtraCampo(this,'[0-9| |-]+')" placeholder="* CEP" class="form-control input-md" required="required" value="" type="search" maxlength="8" pattern="[0-9]+$">
+                        </div>
+                        
+                        <div class="col-md-3">
+                           <button  type="button"  class="btn btn-success form-control " onclick="pesquisacep(cep.value)">Pesquisar</button>
+                        </div>
+                     </div>
+                     <!-- Search input-->
+                     <!-- Prepended text-->
+                     <div class="form-group">
+                        <label class="col-md- control-label" for="prependedtext"></label>
+                        <div class="col-md-6">
+                           <div class="input-group">
+                              <span class="input-group-addon"  style="color:grey">* Rua</span>
+                              <input id="rua" name="rua" class="form-control" placeholder=""  required="required"  type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="input-group">
+                              <span class="input-group-addon"  style="color:grey">* Bairro</span>
+                              <input id="bairro" name="bairro" class="form-control" placeholder=""  required="required"  type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-2">
+                           <div class="input-group">
+                              <span class="input-group-addon" style="color:grey">* N&ordm;</span>
+                              <input id="numero" name="numero" class="form-control" placeholder=""  required="required" type="text">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <label class="col-md- control-label" for="prependedtext"></label>
+                        <div class="col-md-6">
+                           <div class="input-group">
+                              <span class="input-group-addon" style="color:grey">* Cidade</span>
+                              <input id="cidade" name="cidade"   class="form-control" placeholder=""  required="required"  type="text">
+                           </div>
+                        </div>
+                      
+                        <div class="col-md-6">
+                           <div class="input-group">
+                              <span class="input-group-addon" style="color:grey">Complemento</span>
+                              <input id="complemento" name="complemento" class="form-control"  placeholder=""   type="text">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <label class="col-md- control-label" for="prependedtext"></label>
+                        <div class="col-md-6">
+                           <div class="input-group">
+                              <span class="input-group-addon" onkeyup="revomeNumeros(this)" style="color:grey">*    Estado</span>
+                              <input id="estado" name="estado" class="form-control" placeholder=""  required="required"  type="text" maxlength="2">
+                           </div>
+                        </div>
+
+                        <div class="col-md-6">
+                           <select style="color:grey" required="required" id="EstadoCivil" name="EstadoCivil" class="form-control">
+                              <option value="">* Meio de Transporte</option>
+                              <option value="Onibus">&Ocirc;nibus</option>
+                              <option value="Trem/Metr&ocirc;">Trem/Metr&ocirc;</option>
+                              <option value="Onibus + Trem/Metr&ocirc;">&Ocirc;nibus + Trem/Metr&ocirc;</option>
+                              <option value="Carro">Carro</option>
+                              <option value="Moto">Moto</option>
+                           </select>
+                        </div>
+                     </div>
+                     <!-- Prepended checkbox -->
+                     <div class="form-group">
+                        <!-- Select Basic -->
+                        <!-- Text input-->
+                        <label class="col-md- control-label" for="prependedtext"></label>
+                        <div class="col-md-3">
+                              <div class="input-group">
+                                 <input id="valorGasto" type="text" onfocus="removeFomratoBR(this)" onkeyup="Formata(filtraCampo(this,'[0-9|,]+'))" onblur="numberToReal(this)" class="form-control input-md" name="valorGasto" placeholder="Gasto Transporte R$" />
+                                 
+                           </div>
+                        </div>
+                      
+                        <div class="col-md-3">
+                              <div class="input-group">
+                                 <input id="ultSalario" type="text"  onfocus="removeFomratoBR(this)"  onkeyup="Formata(filtraCampo(this,'[0-9|,]+'))" onblur="numberToReal(this)" class="form-control input-md" required="required" name="ultimoSalario" placeholder="* &Uacute;ltimo Salario R$" />
+                            
+                           </div>
+                        </div>
+                      
+                        <div class="col-md-6">
+                           <select id="disponibilidade" style="color: grey" name="disponibilidade" class="form-control">
+                              <option value="">Disponibilidade de Hor&aacute;rio</option>
+                              <option value="medio">Manh&atilde;</option>
+                              <option value="super">Tarde</option>
+                              <option value="posg">Noite</option>
+                              <option value="posg">Madrugada</option>
+                                <option value="posg">Manhã e Tarde</option>
+                                <option value="posg">Manhã e Noite</option>
+                                <option value="posg">Manhã e Madrugada</option>
+                               <option value="posg">Tarde e Noite</option>
+                               <option value="posg">Tarde e Madrugada</option>
+                               <option value="posg">Noite e Madrugada</option>
+                              <option value="posg">Todos</option>
+                           </select>
+                        </div>
+                   
+                     
+                
+               </div>
+          
+            <div>   
+            </div>
+         
+           
+                  <div class="form-group">
+                     <label class="col-md-5 control-label" for="Cadastrar"></label>
+                     <div class="col-md-2">
+                        <button id="Proximo"   class="btn btn-success form-control"   name="Cadastrar" class="btn btn-success" type="submit">Efetuar Cadastro</button>
+                     </div>
+                  </div>
+             
+                
+                      
+                </div>
+            
+           
+             
+         </fieldset>
+      </form>
+   </body>
+</html>
+
+             <div id="Logo">
+               <a href="http://www.umc.br/"><img style="margin-right:10%;  margin-left: %; width: 1300px; " src="img/Logo.PNG" /></a>
+                <label for="nome" style="font-size: 15px; margin-left:40%; color: gray" class="propiedad"> Desenvolvido por Tripé Analytics  - 2018 </label>
+            </div> 

@@ -1,512 +1,109 @@
-<!DOCTYPE html>
-<html lang="en" >
-
+﻿<!DOCTYPE html>
+<html lang="pt-br en">
+    
 <head>
-  <meta charset="UTF-8">
-  <title>Cadastro Curriculo</title>
-  
-   <link rel="stylesheet" href="css/style.css">
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>CRUD com Bootstrap 3</title>
 
-  
-
-  <div class="container-fluid">
-
-
-<div id="Logo">
- <a href="http://www4.sercom.com.br/SiteSercom/"><img src="img/Logo.PNG"/></a>
-  
-  
-</div>
-<!DOCTYPE html>
-<html lang="en" >
-
-<head>
-  <meta charset="UTF-8">
-  <title>Formularios</title>
-  
-
-
-     
-
-</head>
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="css/style.css">    
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+ <link href="css/style.css" rel="stylesheet">
+    </head>
 
 <body>
 
-    <div class="conteiner-fluid">
-       <div class="row-fluid">
-   
-    <form method="POST" >
-      
-<div id="contentForm">
- <label for="nome"  style="font-size: 25px; margin-left: 40%; color: grey" class="propiedad">Dados Pessoais</label>
 
-
- 
-
-<div class = "columnP">
-    
-
-    <div class = "column">
-      <br>
-      
-          <li class="fila">
-          
-          <input type="text" id="nome" name="fullname"  placeholder="Nome" required="required" autofocus="autofocus" />
-          <label for="nome" class="propiedad"></label>
-        
-          <input type="hidden" id="codigo" name="code" value="25" />
-          </li>
-
-          <li class="fila">
-          <select id="estado_civil" required="required" name="estado_civil" >
-            <option value="">Estado Cívil</option>
-            <option value="solteiro">Solteiro</option>
-            <option value="casado">Casado</option>
-            <option value="viuvo">Viúvo</option>
-            <option value="divorciado">Divorciado</option>
-            <option value="outro">Outro</option>
-          </select>
-          <label for="estado_civil" class="propiedad"></label>
-          </li>
-
-          <li class="fila">
-            <label for="genero" class="propiedad"></label>
-          <input type="radio" id="Masculino" required="required" name="genre" value="Masculino" />
-          <label for="Masculino"  class="de-radio"></label>
-
-          <input type="radio" id="Feminino" required="required" name="genre" value="Feminino" checked="checked" />
-          <label for="Feminino" class="de-radio"></label>
-
-          <li class="fila">
-          <input type="date" id="data" name="birthdate" placeholder="Data de Nascimento" />
-          <label for="fecha" class="propiedad"></label>
-          </li>
-
-          <li class="fila">
-          <input  id="Endereco" required="required" name="Endereço"  placeholder="Local de Nascimento" />
-          <label for="Endereco" class="propiedad"></label>
-          </li>
-
-          <li class="fila">
-             <label  for="UF" class="propiedad"></label>
-            <select id="UF" required="required" > 
-          <option value="">UF</option>
-          <option value="AC">AC</option>
-          <option value="AL">AL</option>
-          <option value="AP">AP</option>
-          <option value="AM">AM</option>
-          <option value="BA">BA</option>
-          <option value="CE">CE</option>
-          <option value="DF">DF</option>
-          <option value="ES">ES</option>
-          <option value="GO">GO</option>
-          <option value="MA">MA</option>
-          <option value="MS">MS</option>
-          <option value="MT">MT</option>
-          <option value="MG">MG</option>
-          <option value="PA">PA</option>
-          <option value="PB">PB</option>
-          <option value="PR">PR</option>
-          <option value="PE">PE</option>
-          <option value="PI">PI</option>
-          <option value="RJ">RJ</option>
-          <option value="RN">RN</option>
-          <option value="RS">RS</option>
-          <option value="RO">RO</option>
-          <option value="RR">RR</option>
-          <option value="SC">SC</option>
-          <option value="SP">SP</option>
-          <option value="SE">SE</option>
-          <option value="TO">TO</option>
-          </select>
-          </li>
-
-          <li class="fila">
-          <input type="email" id="email" name="email"  placeholder="E-mail" required="required" />
-          <label for="email" class="propiedad"></label>
-          </li>
-
-          <li class="fila">
-          <input type="tel" id="telefone" name="numero de telefone 1" required="required" placeholder="Telefone 1" pattern="[0-9]{11}" />
-          <label for="telefone" class="propiedad"></label>
-          </li>
-
-          <li class="fila">
-          <input type="tel" id="telefone" name="numero de telefone 2" required="required"  placeholder="Telefone 2" pattern="[0-9]{11}" />
-          <label for="telefone" class="propiedad"></label>
-          </li>
-
-
-          <li class="fila">
-          <input type="number" id="Carteira" required="required" name="Carteira"  placeholder="Numero da CTPS" />
-          <label for="Carteira" class="propiedad"></label>
-          </li>
-
-
-          <li class="fila">
-          <input type="number" id="CPF" required="required" name="Carteira"  placeholder="CPF" />
-          <label for="CPF" class="propiedad"></label>
-          </li>
-
-           <li class="fila">
-          <input type="number" id="RG" required="required" name="RG"  placeholder="RG" />
-          <label for="RG" class="propiedad"></label>
-          </li>
-
-          <li class="fila">
-          <input type="date" id="dataEmissao" required="required" name="dataEmissao"  placeholder="Data de emissao do RG" />
-          <label for="dataEmissao" class="propiedad"></label>
-          </li>
-
-         
-</div>
-
-
-
-
-
-<div class ="column1">
-
-  <br>
-  <br>
-
-          <li class="fila">
-          <input type="text" id="OrgãoExpedidor" required="required" name="OrgãoExpedidor"  placeholder="Orgão Expedidor" />
-          <label for="OrgãoExpedidor" class="propiedad"></label>
-          </li>
-
-
-          <li class="fila">
-          <input type="number"  id="CertificadodeReservista"  required="required" name="Reservista"  placeholder="Reservista" />
-          <label for="Reservista" class="propiedad"></label>
-          </li>
-
-          
-          <li class="fila">
-          <input type="number" id="Titulo De Eleitor" required="required" name="Titulo de Eleitor"  placeholder="Titulo de Eleitor" />
-          <label for="Titulo De Eleitor" class="propiedad"></label>
-          </li>
-
-
-          <li class="fila">
-          <input type="number" id="PIS" required="required" name="PIS"  placeholder="Número do PIS" />
-          <label for="PIS" class="propiedad"></label>
-          </li>
-
-
-          <li class="fila">
-          <input type="text" id="Endereço Completo" required="required" name="EndereçoCompleto"  placeholder="Endereço Completo" />
-          <label for="Endereço Completo" class="propiedad"></label>
-          </li>
-
-          <li class="fila">
-          <input type="text" id="Bairro " required="required" name="Bairro"  placeholder="Bairro" />
-          <label for="Bairro" class="propiedad"></label>
-          </li>
-
-
-           <li class="fila">
-          <input type="text" id="Cidade " required="required" name="Cidade"  placeholder="Cidade" />
-          <label for="Cidade" class="propiedad"></label>
-          </li>
-
-
-          <li class="fila">
-          <input type="number" id="CEP" required="required" name="CEP" required="required" placeholder="Número do CEP" />
-          <label for="CEP" class="propiedad"></label>
-          </li>
-
-
-          <li class="fila">
-          <select id="Meio de Transporte" name="Meio de Transporte" required="required" placeholder="Meio de Transporte">
-            <option value="">Meio de Transporte</option>
-            <option value="Ônibus">Ônibus</option>
-            <option value="Trem/Metrô">Trem/Metrô</option>
-            <option value="Ônibus + Trem/Metô">Ônibus + Trem/Metô</option>
-            <option value="Carro">Carro</option>
-            <option value="Moto">Moto</option>
-          </select>
-          <label for="Meio de Transporte" class="propiedad"></label>
-          </li>
-
-
-          <li class="fila">
-          <input type="number" id="Valor Gasto" name="Valor Gasto"  placeholder="Gasto Transporte" />
-          <label for="Valor Gasto" class="propiedad"></label>
-          </li>
-
-         
-
-
-          <li class="fila">
-          <input type="number" id=" Último Salário" required="required" name=" Último Salário"  placeholder=" Último Salário" />
-          <label for=" Último Salário" class="propiedad"></label>
-          </li>
-
-          <li class="fila">
-          <select id="Horário" name="Horário" >
-            <option value="">Disponibilidade de Horário</option>
-            <option value="medio">Manhã</option>
-            <option value="super">Tarde</option>
-            <option value="posg">Noite</option>
-            <option value="posg">Madrugada</option>
-          </select>
-          <label for="estudios" class="propiedad"></label>
-        </li>
-     
-      
-</div>
-
-<br>
-<br>
-<br>
- <li class="fila botonera">
-         <a href="divId" ><button onclick="Mudarestado" style=" background-color: #4CAF50; border: none; color: white; padding: 15px 32px; text-align: center;text-decoration: none;
-          display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;" type="submit">Próximo</button></a>
-          
-        <button   style=" background-color: #4CAF50; border: none; color: white; padding: 15px 32px; text-align: center;text-decoration: none;
-          display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;" type="reset">Refazer</button>   
-        
-        </li>
-
-</div>
-
-
-    </div>
-
-
-        </div>
-
-       
-     
-
-
-    </div>
-
-
-
-<div id="divId" class="hidden">
 
     
-   <label for="nome"  style="font-size: 25px; margin-left: 40%; color: grey" class="propiedad">Formação Academica</label>
-
-        <div class="column">
-        
-        <li class="fila">
-          <select id="estudos" name="estudos" required="required">
-            <option value="">Escolaridade</option>
-            <option value="medio">Ensino Médio</option>
-            <option value="super">Técnico</option>
-            <option value="posg">Graduação</option>
-            <option value="grado">Pós-Graduação</option>
-          </select>
-          <label for="estudos" class="propiedad"></label>
-
-
-         <li class="fila">
-          <select id="status" name="status" required="required">
-            <option value="">Status</option>
-            <option value="medio">Completo</option>
-            <option value="super">Incompleta</option>
-            <option value="posg">Cursando</option>
-            <option value="grado">Trancado</option>
-          </select>
-          <label for="status" class="propiedad"></label>
-
-
-          <li class="fila">
-          <select id="horárioCurso" name="horárioCurso" required="required">
-            <option value="">Período do Curso</option>
-            <option value="medio">Manhã</option>
-            <option value="super">Tarde</option>
-            <option value="posg">Noite</option>
-            <option value="grado">EAD</option>
-          </select>
-          <label for="horárioCurso" class="propiedad"></label>
-
-          <li class="fila">
-          <input type="text" id="curso1"  name="curso1"  placeholder="Curso 1" />
-          <label for="curso1" class="propiedad"></label>
-          </li>
-
-          <li class="fila">
-          <input type="instituição1" id="instituição1"  name="instituição1"  placeholder="Instituição" />
-          <label for="instituição1" class="propiedad"></label>
-          </li>
-
-
-          <li class="fila">
-          <input type="text" id="Período"  name="Período"  placeholder="Período Curso 1" />
-          <label for="Período" class="propiedad"></label>
-          </li>
-
-
-           <li class="fila">
-          <input type="text" id="curso2"  name="curso2"  placeholder="Curso 2" />
-          <label for="curso2" class="propiedad"></label>
-          </li>
-
-          <li class="fila">
-          <input type="instituição2" id="instituição2"  name="instituição2"  placeholder="Instituição" />
-          <label for="instituição2" class="propiedad"></label>
-          </li>
-
-
-
-          <li class="fila">
-          <input type="text" id=""  name="Período2"  placeholder="Período Curso 2" />
-          <label for="Período2" class="propiedad"></label>
-          </li>
-
-
-
-      
-           <li class="fila">
-          <select id="ConhecimentosDeInformática" name="ConhecimentosDeInformática" >
-            <option value="">Conhecimentos de Informática</option>
-            <option value="medio">Básico</option>
-            <option value="super">Intermediário</option>
-            <option value="posg">Avançado</option>
-          </select>
-          <label for="ConhecimentosDeInformática" class="propiedad"></label>
-
-
-
-
-             <li class="fila">
-          <input type="text" id="Nome da Mãe"  name="Nome da Mãe"  placeholder="Nome da Mãe" required="required" />
-          <label for="Nome da Mãe" class="propiedad"></label>
-          </li>
-
-
-             <li class="fila">
-          <input type="text" id="Nome do Conjuge"  name="Nome do Conjuge"  placeholder="Nome do Conjuge" />
-          <label for="Nome do Conjuge" class="propiedad"></label>
-          </li>
-
-
-             <li class="fila">
-          <input type="text" id="Nacionalidade Conjuge"  name="Nacionalidade Conjuge"  placeholder="Nacionalidade Conjuge" />
-          <label for="Nacionalidade Conjuge" class="propiedad"></label>
-          </li>
-
-
-
-             <li class="fila">
-          <input type="text" id="Ocupação Conjuge"  name="Ocupação Conjuge"  placeholder="Ocupação Conjuge" />
-          <label for="Ocupação Conjuge" class="propiedad"></label>
-          </li>
-
-
-
-             <li class="fila">
-          <input type="text" id="Nome dos Dependentes "  name="Nome dos Dependentes "  placeholder="Nome dos Dependentes " />
-          <label for="Nome dos Dependentes " class="propiedad"></label>
-          </li>
-
-
-
-             <li class="fila">
-          <input type="text" id="Datas de Nascimento"  name="Datas de Nascimento"  placeholder="Datas de Nascimento" />
-          <label for="Datas de Nascimento" class="propiedad"></label>
-          </li>
-
-
-
-          <li class="fila">
-          <select id="Canal que Conheceu a Sercom" name="Canal que Conheceu a Sercom" >
-            <option value="">Canal</option>
-            <option value="medio">PAT Taboão da Serra</option>
-            <option value="super">PAT Embú das Artes</option>
-            <option value="posg">PAT Embú-Guaçú</option>
-            <option value="grado">PAT Itapecerica da Serra</option>
-            <option value="grado">Funcionários</option>
-            <option value="grado">Agências</option>
-            <option value="grado">Internet</option>
-          </select>
-          <label for="Canal que Conheceu a Sercom" class="propiedad"></label>
-
-
-         <li class="fila">
-          <input type="text" id="Indicação"  name="Indicação"  placeholder="Indicação" />
-          <label for="Indicação" class="propiedad"></label>
-          </li>
-
-           <!-- checkbox -->
-      
-
-       <li class="fila">
-            <label for="Já trabalhou na Sercom ?" class="propiedad">Já trabalhou na Sercom ?</label>
-          <input type="radio" id="Sim" name="Sim" value="Sim" />
-          <label for="Sim" class="de-radio">Sim</label>
-
-          <input type="Não" id="Não" name="genre" value="Não" checked="checked" />
-          <label for="Não" class="de-radio">Não</label>
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-
+    
+    <div class="site-header">
   
-
-
- <!-- divID -->
+    
+    
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+   <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+     <span class="sr-only">Toggle navigation</span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Menu Principal</a>
    </div>
-
-
-    </form>
-
-
-
+   <div id="navbar" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-right">
+     <li><a href="teste.html">ossos</a></li>
+     <li><a href="#">Op&ccedil;&oacute;es</a></li>
+     <li><a href="#">Perfil</a></li>
+     <li><a href="#">Ajuda</a></li>
+    </ul>
+   </div>
   </div>
+ </nav>
 
-  
-  
+ <div id="main" class="container-fluid" style="margin-top: 50px">
+ 
+ 	<div id="top" class="row">
+		<div class="col-sm-3">
+			 <div id="Logo">
+               <a href="index.html"><img style="margin-right: 27% ; width: 200px; " src="img/eadLogo.png" /></a>
+                
+            </div>
+		</div>
+		<div class="col-sm-3">
+			
+			<div class="input-group h2">
+				<input name="data[search]" class="form-control" id="search" type="text" placeholder="Primeiro acesso Digite o RGM">
+                <a href=""></a>
+				<span class="input-group-btn">
+					<button class="btn btn-primary" type="submit">
+						<span class="glyphicon glyphicon-search"></span>
+					</button>
+				</span>
+			</div>
+			
+		</div>
+		<div class="col-sm-4">
+			<a href="add.html" class="btn btn-primary pull-right h2">Faça seu Cadastro</a>
+		</div>
+        
+        
+	</div> <!-- /#top -->
+    
+     
+     
+     
+ 
+ 	
+ 	<div id="list" class="row">
+	
+	<div class="table-responsive col-md-12">
+		<table class="table table-striped" cellspacing="0" cellpadding="0">
+			
+		</table>
+	</div>
+	
+	</div> <!-- /#list -->
+	
+	
+ </div> <!-- /#main -->
 
-</body>
 
-</html>
+    </div>
+    
 
-
-  </div>
-
-</div>
-<div class="bolinha"></div>
-  <script src='https://code.jquery.com/jquery-3.2.1.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
   
 
     <script  src="js/index.js"></script>
-
-</div>
-
-
+ <script src="js/jquery.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+    
 </body>
-
 </html>
-
-
