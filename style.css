@@ -1,0 +1,28 @@
+ Los campos no válidos se muestran con el borde y el fondo de color rojo */ 
+
+/* Fila del formulario */
+
+}
+/* Labels de propiedades */
+/* El label de propiedad cuyo campo tiene el foco o está activado */
+
+
+#Logo{
+
+  width: auto;
+  height: 10%;
+
+}
+
+
+
+/* Los campos pequeños */
+
+/* Las propiedades de campos válidos con validación que no estén vacíos deben mostrar un icono de aceptación antes */ 
+:required:valid:not(:placeholder-shown) ~ .propiedad:after{
+  content: "\2713";
+  color: teal;
+  vertical-align: middle;
+  display: inline;
+  padding-right: .5rem;
+}
